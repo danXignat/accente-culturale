@@ -8,7 +8,7 @@ import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-ateliere',
-  imports: [AsyncPipe],
+  imports: [],
   templateUrl: './ateliere.html',
   styleUrl: './ateliere.css'
 })
