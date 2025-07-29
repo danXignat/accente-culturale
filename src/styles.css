@@ -227,7 +227,7 @@ body {
   padding: 1rem;
   backdrop-filter: blur(10px);
   border-bottom: 2px solid var(--romanian-gold);
-  position: sticky;
+  position: static;
   top: 0;
   z-index: 90;
   box-shadow: 0 2px 20px var(--shadow-medium);
