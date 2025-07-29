@@ -20,23 +20,6 @@ export class App {
 
   }
 
-  // ngOnInit(): void {
-  //   this.getWorkshops()
-  // }
-
-  // workshopList = signal<WorkshopModel[]>([]);
-  // getWorkshops() {
-  //   this.workshopService.getWorkshops().subscribe({
-  //     next: (response: WorkshopModel[]) => {
-  //       console.log('Workshops loaded:', response);
-  //         this.workshopList.set(response);
-  //     },
-  //     error: () => {
-  //       console.error('Error loading workshops:', Error); // Add this
-  //     }
-  //   })
-  // }
-
   scrollToSection(sectionId: string): void {
     const element = document.getElementById(sectionId);
     if (element) {

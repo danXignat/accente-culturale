@@ -15,7 +15,7 @@ import { AsyncPipe } from '@angular/common';
 export class Ateliere implements OnInit {
   private workshopService = inject(WorkshopService);
   
-  workshops$!: Observable<WorkshopModel[]>;
+  workshops: WorkshopModel[] = []
   error = false;
 
   ngOnInit(): void {
@@ -23,14 +23,7 @@ export class Ateliere implements OnInit {
   }
 
   private loadWorkshops(): void {
-    this.error = false;
-    this.workshops$ = this.workshopService.getWorkshops().pipe(
-      catchError(err => {
-        console.error('Failed to fetch workshops', err);
-        this.error = true;
-        return of([]); // Return empty array on error
-      })
-    );
+
   }
 
   retry(): void {

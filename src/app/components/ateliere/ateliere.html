@@ -7,8 +7,7 @@
     <div class="section-content">
         <div class="workshops-grid">
             
-            @if (workshops$ | async; as workshops) {
-                @if (workshops.length > 0) {
+            @if (workshops.length > 0) {   
                 @for (workshop of workshops; track workshop.id || $index) {
                     <div class="workshop-card">
                     <h3 class="workshop-title">{{ workshop.title }}</h3>
@@ -19,10 +18,8 @@
                     <h3>Vârsta recomandată: {{ workshop.age_range }}</h3>
                     </div>
                 }
-                } @else {
-                    
-                }
-            } @else {
+            }
+            @else {
                 <div class="workshop-card">
                         <div class="workshop-icon">🎨</div>
                         <h3 class="workshop-title">Atelier de pictură</h3>

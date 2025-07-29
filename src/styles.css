@@ -421,7 +421,7 @@ body {
   font-family: 'Cinzel', serif;
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
-  color: black;
+  color: rgb(255, 255, 255);
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px var(--shadow-light);
   letter-spacing: 1px;

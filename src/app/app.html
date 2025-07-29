@@ -13,7 +13,7 @@
       </a>
       <a class="nav-link" routerLink="despre-noi">
         <span class="nav-icon">👥</span>
-        <span class="nav-text">DESPRE NOI</span>
+        <span class="nav-text">DESPRE</span>
       </a>
       <a class="nav-link" routerLink="ateliere">
         <span class="nav-icon">🎨</span>
@@ -35,7 +35,7 @@
         <span class="nav-icon">📋</span>
         <span class="nav-text">ÎNSCRIERI</span>
       </a>
-      <a href="#contact" class="nav-link">
+      <a (click)="scrollToSection('contact')" class="nav-link" style="cursor: pointer">
         <span class="nav-icon">📞</span>
         <span class="nav-text">CONTACT</span>
       </a>  
