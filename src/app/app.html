@@ -1,0 +1,95 @@
+
+<nav class="navigation">
+  <div class="nav-container">
+    <h1 class="navbar-title">
+      <span class="title-line">Asociația Accente</span>
+      <span class="title-line">Culturale Cristian</span>
+    </h1>
+
+    <div class="nav-links">
+      <a class="nav-link" routerLink="acasa">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-text">ACASĂ</span>
+      </a>
+      <a class="nav-link" routerLink="despre-noi">
+        <span class="nav-icon">👥</span>
+        <span class="nav-text">DESPRE NOI</span>
+      </a>
+      <a class="nav-link" routerLink="ateliere">
+        <span class="nav-icon">🎨</span>
+        <span class="nav-text">ATELIERE</span>
+      </a>
+      <a class="nav-link" routerLink="evenimente">
+        <span class="nav-icon">🎭</span>
+        <span class="nav-text">EVENIMENTE</span>
+      </a>
+      <a class="nav-link" routerLink="galerie">
+        <span class="nav-icon">🖼️</span>
+        <span class="nav-text">GALERIE</span>
+      </a>
+      <a class="nav-link" routerLink="blog">
+        <span class="nav-icon">📝</span>
+        <span class="nav-text">BLOG</span>
+      </a>
+      <a class="nav-link" routerLink="inscrieri">
+        <span class="nav-icon">📋</span>
+        <span class="nav-text">ÎNSCRIERI</span>
+      </a>
+      <a href="#contact" class="nav-link">
+        <span class="nav-icon">📞</span>
+        <span class="nav-text">CONTACT</span>
+      </a>  
+    </div> 
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<!-- Modern Footer -->
+<footer id="contact" class="footer">
+  <div class="footer-overlay"></div>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <div class="contact-details">
+        <div class="contact-item">
+          <span class="contact-icon">📞</span>
+          <span>{{contactInfo.phone}}</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">✉️</span>
+          <span>{{contactInfo.email}}</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <span>{{contactInfo.address}}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h3>Urmăriți-ne</h3>
+      <div class="footer-social">
+        <a href="https://www.tiktok.com/@accente.culturale" target="_blank" class="footer-social-btn">
+          <span>♪</span> TikTok
+        </a>
+        <a href="https://www.instagram.com/accente.culturale/" target="_blank" class="footer-social-btn">
+          <span>📷</span> Instagram
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61572704333986" target="_blank" class="footer-social-btn">
+          <span>📘</span> Facebook
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Asociația Accente Culturale Cristian. Toate drepturile rezervate.</p>
+    <div class="footer-motto">
+      <span class="motto-icon">❦</span>
+      <span>Patrimoniul prinde culoare când e privit cu ochi de copil</span>
+      <span class="motto-icon">❦</span>
+    </div>
+  </div>
+
+</footer>
